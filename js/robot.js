@@ -48,9 +48,9 @@ function init()
 
     // Camaras ortograficas
     if (ar < 1) {
-        minicamera = new THREE.OrthographicCamera(-L * ar, L * ar, L, -L, 0.1, 100);
+        minicamera = new THREE.OrthographicCamera(-L * ar, L * ar, L, -L, 10, 1000);
     } else {
-        minicamera = new THREE.OrthographicCamera(-L, L, L * ar, -L * ar, 0.1, 100);
+        minicamera = new THREE.OrthographicCamera(-L, L, L * ar, -L * ar, 10, 1000);
     }
     minicamera.position.set(0, L * 5.5, 0);
     minicamera.up = new THREE.Vector3(-1,0,0);
